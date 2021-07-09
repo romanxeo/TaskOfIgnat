@@ -19,7 +19,7 @@
     "typescript": "~3.7.2",
     "uuid": "^8.3.2"
   },
-  "homepage": "https://romanxeo.github.io/ignat",
+  "homepage": "https://romanxeo.github.io/TaskOfIgnat",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
