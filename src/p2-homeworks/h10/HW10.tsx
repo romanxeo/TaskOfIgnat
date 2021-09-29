@@ -1,13 +1,13 @@
 import React from 'react'
 import {useDispatch, useSelector } from 'react-redux';
 import SuperButton from '../h4/common/c2-SuperButton/SuperButton'
-import {AppStoreType} from "./bll/store";
+import {AppRootStateType} from "../../p2-homeworks/bll/store";
 import loader from "./loading/preloaderNew.svg"
 import {loadingAC} from "./bll/loadingReducer";
 
 function HW10() {
 
-  let isLoad = useSelector<AppStoreType, boolean>(state => state.loading.isLoad)
+  let isLoad = useSelector<AppRootStateType, boolean>(state => state.loading.isLoad)
   const dispatch = useDispatch()
 
     const callback = (newIsLoad: boolean) => {

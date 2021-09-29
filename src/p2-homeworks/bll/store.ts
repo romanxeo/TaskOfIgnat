@@ -1,11 +1,16 @@
-import {applyMiddleware, combineReducers, createStore} from 'redux';
+import {applyMiddleware, combineReducers, createStore } from 'redux'
 import thunkMiddleware from "redux-thunk";
-import {requestReducer} from "./requestReduser";
+import {loadingReducer} from '../h10/bll/loadingReducer'
+import {themeReducer} from "../h12/bll/themeReducer";
+import {requestReducer} from "../h13/bll/requestReduser";
+
 
 // объединяя reducer-ы с помощью combineReducers,
 // мы задаём структуру нашего единственного объекта-состояния
 const rootReducer = combineReducers({
-  request: requestReducer,
+     loading: loadingReducer,
+     theme: themeReducer,
+     request: requestReducer
 })
 // непосредственно создаём store
 export const store = createStore(rootReducer, applyMiddleware(thunkMiddleware));

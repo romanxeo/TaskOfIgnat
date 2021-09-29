@@ -1,6 +1,6 @@
 import React from 'react'
 import {useDispatch, useSelector} from 'react-redux'
-import {AppRootStateType} from "./bll/store";
+import {AppRootStateType} from "../bll/store";
 import {sendSuccesTC, setInputSuccessAC} from "./bll/requestReduser";
 
 function HW13() {
@@ -10,7 +10,6 @@ function HW13() {
   const dispatch = useDispatch()
 
   const inputClick = () => {
-    //debugger
     dispatch(setInputSuccessAC(!success))
   }
 

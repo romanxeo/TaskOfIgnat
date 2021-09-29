@@ -31,7 +31,7 @@ const initState = {
 
 type InitStateType = typeof initState
 
-export const requestReducer = (state: InitStateType = initState, action: any): InitStateType => {
+export const requestReducer = (state: InitStateType = initState, action: actionType): InitStateType => {
   //debugger
   switch (action.type) {
     case "SET-INPUT-SUCCESS": {
@@ -61,8 +61,6 @@ export const sendSuccesTC = (success: boolean) => {
         console.log(res.data.errorText)
       })
       .catch(error => {
-        //console.log( {...error} );
-        //console.log( error.response ? error.response.data.errorText : error.message );
         error.response ?
           dispatch(setTextMessageAC(error.response.data.errorText))
           :

@@ -4,7 +4,7 @@ import './index.css'
 import App from './p1-main/m1-ui/u1-app/App'
 import * as serviceWorker from './serviceWorker'
 import {Provider} from "react-redux";
-import {store} from './../src/p2-homeworks/h13/bll/store';
+import {store} from '../src/p2-homeworks/bll/store';
 import { BrowserRouter } from 'react-router-dom'
 
 ReactDOM.render(
