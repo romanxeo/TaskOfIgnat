@@ -23,7 +23,7 @@ function HW13() {
       homeworks 13
       <div>
         <input type='checkbox' checked={success} onClick={inputClick}/>
-        <button onClick={sendSuccessButton}>SEND SUCCESS</button>
+        <button onClick={sendSuccessButton}>SEND SUCCESS 13</button>
         <div>{textMessage}</div>
       </div>
       <hr/>
